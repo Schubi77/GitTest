@@ -14,7 +14,8 @@ public class Call_TestAblauf
 	static String testURL = TestParameter.testURL;
 	private WebDriver webDriver;
 
-
+	//Aenderung durch Tester
+	
 	@Test
 	@Parameters({ "wort1" })
 	public void schreibe_Teil1(String wort1)
