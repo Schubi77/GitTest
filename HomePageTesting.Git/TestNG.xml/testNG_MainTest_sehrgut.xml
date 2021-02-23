@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="StartByButtons" parallel="none">
+	<test name="ShowButtons">
+	<parameter name="userID" value="08" />
+		<classes>
+			<class name="testNG.AnnoButtonsNG" />
+		</classes>
+	</test>
+		<test name="Pause">
+		<parameter name="timer" value="5000" />
+		<classes>
+			<class name="resources.PauseTest" />
+		</classes>
+	</test>
+<!-- 	<test name="FirefoxTest">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="browser.CrossBrowserDemo" />
+		</classes>
+	</test>
+	<test name="Pause">
+		<parameter name="timer" value="5000" />
+		<classes>
+			<class name="resources.PauseTest" />
+		</classes>
+	</test>
+	<test name="ChromeTest">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="browser.CrossBrowserDemo" />
+		</classes>
+	</test> -->
+</suite>
